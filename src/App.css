@@ -1,38 +1,106 @@
-.App {
-  text-align: center;
+html, body {
+  height: 100%;
+  width: 100%;
+  color: #222;
+
+}
+/* Navigation area */
+.nav-item .nav-link{
+  font-weight: 500;
+  color: black;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.navbar-nav .active a{
+  background-color: #36096d;
+  background-image: linear-gradient(315deg, #36096d 0%, #37d5d6 74%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+.navbar-nav a:hover {
+  background-color: #36096d;
+  background-image: linear-gradient(315deg, #36096d 0%, #37d5d6 74%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.navbar-nav li {
+  padding-right: 20px;
+}
+
+.navbar-brand img {
+  height: 50px;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+/* Jumbotron area */
+#jumbotron-index {
+  background-image: url("./images/abstract.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 600px;
+}
+
+#jumbotron-feature {
+  background-image: url("./images/abstract.jpg");
+  background-size: 50%;
+  background-repeat: no-repeat;
+  height: 500px;
+}
+
+.button {
+  border: 3px solid transparent;
+  border-radius: 8px;
+  background: linear-gradient(315deg, #36096d 0%, #37d5d6 74%);
+  background-clip: padding-box;
+  color: whitesmoke;
+}
+
+.button:hover {
+  background: whitesmoke;
+  background-clip: padding-box;
+  color: black;
+  font-weight: bold;
+}
+
+
+/* Three-Column Section */
+.icon {
+  width: 50%;
+  height: auto;
+}
+
+.spacing {
+  padding-top: 5%;
+}
+
+/* Features Page */
+
+.input-box{
+  margin-left: 60%;
+}
+
+#feature-title{
+  letter-spacing: 16px;
+}
+
+
+/*---Media Queries --*/
+@media (max-width: 992px) {
+
+}
+@media (max-width: 768px) {
+  #about-author {
+      text-align: center;
   }
 }
+@media (max-width: 576px) {
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
 }
